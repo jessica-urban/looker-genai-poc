@@ -2,7 +2,7 @@ connection: "db-cummins"
 
  include: "/views/*.view.lkml"                # include all views in the views/ folder in this project
 # include: "/**/*.view.lkml"                 # include all views in this project
- include: "campaign.model.lkml"
+# include: "campaigns.dashboard"
              # include a LookML dashboard called my_dashboard
 
 # # Select the views that should be a part of this model,
