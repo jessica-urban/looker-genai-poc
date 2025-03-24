@@ -7,5 +7,5 @@
   filters:
 
   elements:
-    - name: hello_world
+    - name: walmart_campaigns
       type: looker_column
