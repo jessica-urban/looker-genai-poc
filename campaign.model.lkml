@@ -9,18 +9,21 @@ include: "/views/*.view.lkml"                # include all views in the views/ f
 #
  explore: campaigns {
     join: products {
-     relationship: many_to_one
+     type: left_outer
      sql_on: ${campaigns.campaign_id} = ${products. campaign_id} ;;
+     relationship: many_to_one
    }
 
    join: events {
-     relationship: many_to_one
+     type: left_outer
      sql_on: ${campaigns.campaign_id} = ${events.campaign_id} ;;
+     relationship: many_to_one
    }
 
   join: customer_engagement {
-    relationship: many_to_one
+    type: left_outer
     sql_on: ${campaigns.campaign_id} = ${customer_engagement.campaign_id} ;;
+    relationship: many_to_one
   }
 
   label: "Campaigns Data Explores"
