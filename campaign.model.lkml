@@ -23,7 +23,7 @@ include: "/views/*.view.lkml"                # include all views in the views/ f
   join: customer_engagement {
     type: left_outer
     sql_on: ${campaigns.campaign_id} = ${customer_engagement.campaign_id} ;;
-    relationship: many_to_one
+    relationship: one_to_many
   }
 
   label: "Campaigns Data Explores"
