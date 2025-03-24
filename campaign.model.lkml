@@ -8,17 +8,17 @@ include: "/views/*.view.lkml"                # include all views in the views/ f
 # # and define the joins that connect them together.
 #
  explore: campaigns {
-    join: products {
-     type: left_outer
-     sql_on: ${campaigns.campaign_id} = ${products. campaign_id} ;;
-     relationship: many_to_one
-   }
+#    join: products {
+#     type: left_outer
+#     sql_on: ${campaigns.campaign_id} = ${products. campaign_id} ;;
+#     relationship: many_to_one
+#   }
 
-   join: events {
-     type: left_outer
-     sql_on: ${campaigns.campaign_id} = ${events.campaign_id} ;;
-     relationship: many_to_one
-   }
+#   join: events {
+#     type: left_outer
+#     sql_on: ${campaigns.campaign_id} = ${events.campaign_id} ;;
+#     relationship: many_to_one
+#   }
 
   join: customer_engagement {
     type: left_outer
