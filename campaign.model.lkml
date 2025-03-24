@@ -27,6 +27,6 @@ include: "/views/*.view.lkml"                # include all views in the views/ f
   }
 
   label: "Campaigns Data Explores"
-  description: "Explore campaigns data with products, events, and customer engagement."
+  description: "Explore campaigns data with products."
 
  }
