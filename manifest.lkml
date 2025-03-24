@@ -17,6 +17,6 @@ application: looker-gen-ai {
 }
 
 constant: CONNECTION_NAME {
-  value: ""
+  value: "db-cummins"
   export: override_optional
 }
