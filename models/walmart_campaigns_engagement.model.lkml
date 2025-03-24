@@ -27,5 +27,10 @@ persist_with: walmart_campaigns_engagement_default_datagroup
 
 explore: customer_engagement {}
 
-explore: campaigns {}
-
+explore: campaigns {
+  join: customer_engagement {
+    sql_on: ${campaigns.campaign_id} = ${customer_engagement.campaign_id} ;;  # Define the join condition
+    type: left_outer  # Can be 'inner', 'left', 'right', or 'full'
+    relationship: one_to_many  # Define relationship type
+  }
+}
