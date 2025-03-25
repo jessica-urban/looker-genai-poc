@@ -1,0 +1,24 @@
+{
+"input_dictionary": [
+  {"label":"Campaign ID","name":"campaigns.campaign_id","description":""},
+  {"label":"Campaign Name","name":"campaigns.campaign_name","description":""},
+  {"label":"Campaign Type","name":"campaigns.campaign_type","description":""},
+  {"label":"Start Date","name":"campaigns.start_date","description":""},
+  {"label":"End Date","name":"campaigns.end_date","description":""},
+  {"label":"Target Audience","name":"campaigns.target_audience","description":""},
+  {"label":"Budget","name":"campaigns.budget","description":""},
+  {"label":"Expected Reach","name":"campaigns.expected_reach","description":""},
+  {"label":"Product Category","name":"campaigns.product_category","description":""}
+],
+"input_question": "What is the average budget for each campaign type?",
+"output": [
+  {
+  "model":"walmart_campaigns_engagement",
+  "view":"campaigns",
+  "fields":[
+  {"average":"campaigns.budget"},
+  "campaigns.campaign_type"
+]
+}
+]
+}

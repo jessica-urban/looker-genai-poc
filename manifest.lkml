@@ -17,6 +17,6 @@ application: gen_ai_poc {
 }
 
 constant: CONNECTION_NAME {
-  value: "db-cummins"
+  value: ""
   export: override_optional
 }

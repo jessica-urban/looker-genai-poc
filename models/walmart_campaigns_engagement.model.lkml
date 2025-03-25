@@ -25,6 +25,4 @@ persist_with: walmart_campaigns_engagement_default_datagroup
 # Typically, join parameters require that you define the join type, join relationship, and a sql_on clause.
 # Each joined view also needs to define a primary key.
 
-explore: customer_engagement {}
-
 explore: campaigns {}
