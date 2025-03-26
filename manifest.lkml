@@ -4,7 +4,7 @@ application: gen_ai_poc {
   label: "Looker GenAI Extension"
  ## for development: url: "https://localhost:8080/bundle.js"
   # production
-  file: "dist/bundle.js"
+  file: "bundle.js"
   entitlements: {
     use_embeds: yes
     use_form_submit: yes
